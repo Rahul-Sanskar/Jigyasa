@@ -1,0 +1,42 @@
+2025-02-10 23:19:31,982 - __main__ - INFO - Loading dataset
+2025-02-10 23:19:31,986 - __main__ - INFO - Handling missing values for numeric columns
+2025-02-10 23:19:31,988 - __main__ - INFO - Encoding categorical variables
+2025-02-10 23:19:31,990 - __main__ - INFO - Splitting features and target
+2025-02-10 23:19:31,991 - __main__ - INFO - Splitting into training and testing sets
+2025-02-10 23:19:31,992 - __main__ - INFO - Normalizing numerical columns
+2025-02-10 23:19:31,997 - __main__ - INFO - Training progress model
+2025-02-10 23:19:32,117 - __main__ - INFO - Evaluating progress model
+2025-02-10 23:19:32,130 - __main__ - INFO - Training dropout model
+2025-02-10 23:19:32,136 - __main__ - INFO - Evaluating dropout model
+2025-02-10 23:19:32,150 - __main__ - INFO - Generating progress report for student ID 1
+2025-02-10 23:19:32,171 - __main__ - INFO - Identifying at-risk students
+2025-02-10 23:19:32,175 - __main__ - INFO - Saving models and scaler
+2025-02-10 23:19:32,221 - __main__ - INFO - Loading models
+2025-02-10 23:19:32,440 - __main__ - INFO - Loading dataset
+2025-02-10 23:19:32,443 - __main__ - INFO - Handling missing values for numeric columns
+2025-02-10 23:19:32,446 - __main__ - INFO - Encoding categorical variables
+2025-02-10 23:19:32,448 - __main__ - INFO - Splitting features and target
+2025-02-10 23:19:32,449 - __main__ - INFO - Splitting into training and testing sets
+2025-02-10 23:19:32,451 - __main__ - INFO - Normalizing numerical columns
+2025-02-10 23:19:32,456 - __main__ - INFO - Training progress model
+2025-02-10 23:19:32,550 - __main__ - INFO - Evaluating progress model
+2025-02-10 23:19:32,565 - __main__ - INFO - Training dropout model
+2025-02-10 23:19:32,571 - __main__ - INFO - Evaluating dropout model
+2025-02-10 23:19:32,580 - __main__ - INFO - Generating progress report for student ID 1
+2025-02-10 23:19:32,602 - __main__ - INFO - Identifying at-risk students
+2025-02-10 23:19:32,607 - __main__ - INFO - Saving models and scaler
+2025-02-10 23:19:32,648 - __main__ - INFO - Loading models
+2025-02-10 23:19:37,702 - __main__ - INFO - Loading dataset
+2025-02-10 23:19:37,706 - __main__ - INFO - Handling missing values for numeric columns
+2025-02-10 23:19:37,710 - __main__ - INFO - Encoding categorical variables
+2025-02-10 23:19:37,714 - __main__ - INFO - Splitting features and target
+2025-02-10 23:19:37,714 - __main__ - INFO - Splitting into training and testing sets
+2025-02-10 23:19:37,717 - __main__ - INFO - Normalizing numerical columns
+2025-02-10 23:19:37,721 - __main__ - INFO - Training progress model
+2025-02-10 23:19:37,818 - __main__ - INFO - Evaluating progress model
+2025-02-10 23:19:37,832 - __main__ - INFO - Training dropout model
+2025-02-10 23:19:37,837 - __main__ - INFO - Evaluating dropout model
+2025-02-10 23:19:37,845 - __main__ - INFO - Generating progress report for student ID 1
+2025-02-10 23:19:37,867 - __main__ - INFO - Identifying at-risk students
+2025-02-10 23:19:37,872 - __main__ - INFO - Saving models and scaler
+2025-02-10 23:19:37,910 - __main__ - INFO - Loading models
