@@ -1,0 +1,51 @@
+#npm install axios
+
+#Create API Request Function
+
+import axios from "axios";
+
+const API_URL = "https://your-api.com/predict";
+
+export const classifyImage = async (file) => {
+    const formData = new FormData();
+    formData.append("file", file);
+    
+    try {
+        const response = await axios.post(API_URL, formData, {
+            headers: { "Content-Type": "multipart/form-data" }
+        });
+        return response.data.prediction;
+    } catch (error) {
+        console.error("Error:", error);
+        return null;
+    }
+};
+
+#Use It in React Component
+
+import React, { useState } from "react";
+import { classifyImage } from "./api";
+
+const ImageClassifier = () => {
+    const [file, setFile] = useState(null);
+    const [prediction, setPrediction] = useState("");
+
+    const handleFileChange = (e) => setFile(e.target.files[0]);
+
+    const handleUpload = async () => {
+        if (file) {
+            const result = await classifyImage(file);
+            setPrediction(result);
+        }
+    };
+
+    return (
+        <div>
+            <input type="file" onChange={handleFileChange} />
+            <button onClick={handleUpload}>Classify</button>
+            {prediction && <p>Prediction: {prediction}</p>}
+        </div>
+    );
+};
+
+export default ImageClassifier;
