@@ -1,0 +1,56 @@
+#npm install axios react-native-document-picker
+
+#Modify API Request for React Native
+
+import axios from "axios";
+import DocumentPicker from "react-native-document-picker";
+
+const API_URL = "https://your-api.com/predict";
+
+export const classifyImage = async () => {
+    try {
+        const res = await DocumentPicker.pickSingle({
+            type: [DocumentPicker.types.images],
+        });
+
+        const formData = new FormData();
+        formData.append("file", {
+            uri: res.uri,
+            type: res.type,
+            name: res.name
+        });
+
+        const response = await axios.post(API_URL, formData, {
+            headers: { "Content-Type": "multipart/form-data" }
+        });
+
+        return response.data.prediction;
+    } catch (error) {
+        console.error("Error:", error);
+        return null;
+    }
+};
+
+#Use It in React Native Component
+
+import React, { useState } from "react";
+import { View, Button, Text } from "react-native";
+import { classifyImage } from "./api";
+
+const ImageClassifier = () => {
+    const [prediction, setPrediction] = useState("");
+
+    const handleUpload = async () => {
+        const result = await classifyImage();
+        if (result) setPrediction(result);
+    };
+
+    return (
+        <View>
+            <Button title="Pick an Image & Classify" onPress={handleUpload} />
+            {prediction ? <Text>Prediction: {prediction}</Text> : null}
+        </View>
+    );
+};
+
+export default ImageClassifier;
